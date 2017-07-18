@@ -1,0 +1,99 @@
+<!DOCTYPE HTML>
+<html>
+	
+	<head>
+		
+		<title>Shop Engine :: Rejestracja</title>
+
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<meta http-equiv="content-type" content="text/html" charset="utf-8">
+		<meta http-equiv="content-language" content="pl">
+		
+        <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"> 
+		{css}
+
+		{favicon}
+		
+		<script src="https://cdn.sloenthran.pl/js/jQuery.js"></script>
+	
+	</head>
+
+	<body>
+		
+		<div id="container">
+		
+			<div id="menuclick"><i class="fa fa-th-large"></i></div>
+			
+			<script>
+	
+				$( "#menuclick" ).click(function() {
+					$( "#header_menu" ).fadeToggle();
+				});
+
+			</script>
+			
+			<a id="logomobilne" href="home.html"><img src="{logo}" alt="logo" style="width: 200px;"></a>
+        
+			<div id="header_menu">
+            
+				<a href="home.html"><img src="{logo}" alt="logo" style="width: 200px;"></a>
+
+                <ul>
+   
+					<a href="home.html"><li><i class="fa fa-home"></i> Strona główna</li></a>
+					<a href="login.html"><li><i class="fa fa-lock"></i> Logowanie</li></a>
+					<a href="register.html"><li><i class="fa fa-send"></i> Rejestracja</li></a>
+					<a href="buy.html"><li><i class="fa fa-shopping-cart"></i> Zakupy</li></a>
+    
+                </ul>
+			
+			</div>
+			
+			<br><br><br><br><br>
+
+			<div id="srodek">
+        
+				<h1>Rejestracja</h1>
+				
+				<p><form method="post" action="register.html">
+		
+					<input type="hidden" name="REGISTER" value="true">
+			
+					<br><input type="text" name="NAME" placeholder="Login"><br>
+					<br><input type="password" name="PASS" placeholder="Hasło"><br>
+					<br><input type="text" name="MAIL" placeholder="E-mail"><br>
+			
+					<br><button type="submit" class="przycisk">Zarejestruj <i class="fa fa-chevron-circle-right"></i> </button>
+		
+				</form></p>
+				
+			</div>
+        
+		</div>
+    
+		<div class="clearfix"></div>
+    
+		<div id="footerbg">
+        
+			<div id="footer">
+				
+				<span class="pull-right">
+				
+					Grafika: <a href="http://upek.eu">upek</a> | 
+					
+					Shop Engine: <span itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+	
+						<span itemprop="name"><a href="https://sloenthran.pl">Sloenthran</a></span>
+			
+					</span>
+				
+				</span>
+			
+			</div>
+    
+		</div>
+    
+	</body>
+	
+</html>

@@ -1,0 +1,12 @@
+Options -Indexes
+
+ExpiresActive On
+<FilesMatch ".(jpg|jpeg|png|gif|swf|css|js)$">
+ExpiresDefault A3600
+</FilesMatch>
+
+RewriteEngine on
+
+RewriteRule ([^-]*)-([^-]*)-([^-]*).html$ index.php?pages=$1&id=$2&nick=$3 [L]
+RewriteRule ([^-]*)-([^-]*).html$ index.php?pages=$1&id=$2 [L]
+RewriteRule ([^-]*).html$ index.php?pages=$1 [L]
